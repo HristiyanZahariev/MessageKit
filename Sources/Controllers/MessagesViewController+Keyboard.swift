@@ -80,7 +80,7 @@ internal extension MessagesViewController {
     // MARK: - Updating insets
 
     /// Updates bottom messagesCollectionView inset based on the position of inputContainerView
-    func updateMessageCollectionViewBottomInset() {
+    public func updateMessageCollectionViewBottomInset() {
         /// This is important to skip notifications from child modal controllers in iOS >= 13.0
         guard self.presentedViewController == nil else { return }
         let collectionViewHeight = messagesCollectionView.frame.height
